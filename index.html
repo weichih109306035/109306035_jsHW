@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>109306035_jsHW</title>
+</head>
+<body>
+	<script>
+		var rand;
+		var input;
+		rand=Math.floor((Math.random()*10)+1);
+		input=window.prompt("Please enter an integer from 1 to 10");
+		input=parseInt(input);
+		function myfunction(a,b){
+		    if(a==b){
+			    alert("Congratulations");
+		    }
+		    while(a!=b){
+			    b=window.prompt("Please enter another integer from 1 to 10");
+			    b=parseInt(b);
+			    if(a==b){
+			    alert("Congratulations");
+		        }
+		    }
+	    }
+		myfunction(rand,input);
+	</script>
+</body>
+</html>
